@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantManagement", "RestaurantManagement\RestaurantManagement.csproj", "{05177533-42E6-4C33-A674-8366CDB9ABC3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{07E9F3DF-9AAF-4360-88DD-14F09B758969} = {07E9F3DF-9AAF-4360-88DD-14F09B758969}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A9755E39-91B9-4D22-8448-E44009C62D5F}"
 EndProject
@@ -14,6 +17,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.SqlServer", "DAL.SqlServer\DAL.SqlServer.csproj", "{CDB8ADD5-534D-45B6-98B8-6E4BFF7A7271}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{07E9F3DF-9AAF-4360-88DD-14F09B758969}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A9755E39-91B9-4D22-8448-E44009C62D5F} = {A9755E39-91B9-4D22-8448-E44009C62D5F}
+		{CDB8ADD5-534D-45B6-98B8-6E4BFF7A7271} = {CDB8ADD5-534D-45B6-98B8-6E4BFF7A7271}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

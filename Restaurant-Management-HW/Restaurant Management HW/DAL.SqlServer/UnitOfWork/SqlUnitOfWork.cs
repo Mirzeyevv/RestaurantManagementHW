@@ -10,17 +10,17 @@ using Repository.Repositories;
 
 namespace DAL.SqlServer.UnitOfWork;
 
-public class SqlUnitOfWork(AppDbContext appDbContext, string connectionString) : IUnitOfWork
+public class SqlUnitOfWork(AppDbContext context, string connectionString) : IUnitOfWork
 {
 
     private readonly string _connectionString = connectionString;
 
-    private readonly AppDbContext _appDbContext = appDbContext;
+    private readonly AppDbContext _context = context;
 
     public SqlProductRepository _sqlProductRepository;
     public SqlCustomerRepository _sqlCustomerRepository;
-    public IProductRepository ProductRepository => _sqlProductRepository ?? new SqlProductRepository(connectionString, appDbContext);
-    public ICustomerRepository CustomerRepository => _sqlCustomerRepository ?? new SqlCustomerRepository(connectionString, appDbContext);
+    public IProductRepository ProductRepository => _sqlProductRepository ?? new SqlProductRepository(_connectionString, _context);
+    public ICustomerRepository CustomerRepository => _sqlCustomerRepository ?? new SqlCustomerRepository(_connectionString, _context);
 
     Task<int> IUnitOfWork.SaveChanges()
     {

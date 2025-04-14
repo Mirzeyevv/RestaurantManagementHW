@@ -15,21 +15,23 @@ public class SqlProductRepository : BaseSqlRepository, IProductRepository
 
     public async Task AddAsync(Product product)
     {
-        var sql = @"INSERT INTO Products ([Name], [CreatedBy])
-            VALUES(@Name, @CreatedBy))";
+        var sql = @"INSERT INTO PRODUCTS ([Name],[CreatedBy])
+            VALUES(@Name, @CreatedBy); SELECT SCOPE_IDENTITY()";
 
         using var conn = OpenConnection();
         var generatedId = await conn.ExecuteScalarAsync<int>(sql, product);
+        product.Id = generatedId;   
     }
 
     public IQueryable<Product> GetAll()
     {
-        return _appDbContext.Products.OrderByDescending(p => p.CreatedDate).Where(p=> p.IsDeleted == false);
+        return _appDbContext.Products.OrderByDescending(p => p.CreatedDate).Where(p=> p.IsDeleted == false || p.IsDeleted == null);
+        
     }
 
     public async Task<Product> GetByIdAsync(int id)
     {
-        var sql = @"SELECT p.* FROM Products p WHERE p.Id = @Id AND p.IsDeleted = 0";
+        var sql = @"SELECT p.* FROM Products p WHERE p.Id = @Id AND(p.IsDeleted = 0 OR p.IsDeleted IS NULL)";
         using var conn = OpenConnection();
         return await conn.QueryFirstOrDefaultAsync<Product>(sql, new { Id = id });
     }
@@ -48,12 +50,14 @@ public class SqlProductRepository : BaseSqlRepository, IProductRepository
 
     public async Task<bool> Remove(int id, int DeletedBy)
     {
-        var checkSql = @"SELECT Id FROM Products WHERE Id=@id AND IsDeleted=0";
+        var checkSql = @"SELECT Id FROM Products WHERE Id=@id AND (IsDeleted = 0 OR IsDeleted IS NULL)";
+        
+
         var sql = @"UPDATE Products
-                    SET IsDeleted=1
-                    DeletedBy=@deletedBy
-                    DeletedDate=GETDATE()
-                    WHERE Id = @id";
+            SET IsDeleted = 1,
+                DeletedBy = @deletedBy,
+                DeletedDate = GETDATE()
+            WHERE Id = @id";
 
         using var conn = OpenConnection();
         using var transaction = conn.BeginTransaction();
@@ -64,7 +68,7 @@ public class SqlProductRepository : BaseSqlRepository, IProductRepository
             return false;
         }
 
-        var affectedRow = await conn.ExecuteAsync(sql, new { id, DeletedBy }, transaction);
+        var affectedRow = await conn.ExecuteAsync(sql, new { id, deletedBy = DeletedBy }, transaction);
 
         transaction.Commit();
 

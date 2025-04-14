@@ -9,3 +9,15 @@ C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\Restaurant-Management-HW\Restaur
 C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\refint\Common.dll
 C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.pdb
 C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\ref\Common.dll
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\bin\Debug\net8.0\Common.deps.json
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\bin\Debug\net8.0\Common.dll
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\bin\Debug\net8.0\Common.pdb
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.sourcelink.json
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.dll
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\refint\Common.dll
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\Common.pdb
+C:\Users\Lenovo\Desktop\Step\ASPNet\Web api\HWs\RestaurantManagementHW\Restaurant-Management-HW\Restaurant Management HW\Common\obj\Debug\net8.0\ref\Common.dll

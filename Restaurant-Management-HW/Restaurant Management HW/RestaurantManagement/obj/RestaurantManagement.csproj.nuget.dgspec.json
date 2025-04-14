@@ -1,17 +1,99 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj": {}
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj": {
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj",
-        "projectName": "RestaurantManagement",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\obj\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Common\\Common.csproj"
+              },
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,6 +114,298 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj",
+        "projectName": "DAL.SqlServer",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Repository\\Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj",
+        "projectName": "RestaurantManagement",
+        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\RestaurantManagement.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\RestaurantManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\Application\\Application.csproj"
+              },
+              "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Desktop\\Step\\ASPNet\\Web api\\HWs\\RestaurantManagementHW\\Restaurant-Management-HW\\Restaurant Management HW\\DAL.SqlServer\\DAL.SqlServer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
